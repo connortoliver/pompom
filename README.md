@@ -1,5 +1,5 @@
-# pompom-cli
-Pompom CLI is a command line interface application that utilizes the pomodoro technique to fight procrastination and help track time.
+# pompom
+Pompom is a command line interface (CLI) application that utilizes the pomodoro technique to fight procrastination and help track time.
 
 Usage:
 `python main.py [--ontime int] [--breaktime int] [--activity str] [--sound bool] [--auto bool]`

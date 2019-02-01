@@ -36,18 +36,14 @@ def main(ontime, breaktime, activity, alarm, auto):
 
 
 def timer(ontime, breaktime, alarm):
-    # Variables created because time.sleep() function requires argument to be in seconds.
-    ontime_secs = ontime * 60
-    breaktime_secs = breaktime * 60
-
     click.echo('Timer started! You have {} minutes.'.format(ontime))
-    time.sleep(ontime_secs)
+    time.sleep(ontime * 60)
 
     click.echo('Break time! You have {} minutes.'.format(breaktime))
     if alarm == 'on':
         sound_alarm()
 
-    time.sleep(breaktime_secs)
+    time.sleep(breaktime * 60)
 
     if alarm == 'on':
         sound_alarm()

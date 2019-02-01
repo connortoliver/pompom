@@ -1,9 +1,11 @@
-from setuptools import setup
+import setuptools
 
 setup(
     name='pompom',
     version='0.1.0',
-    packages=['pompom'],
+    description='A simple pomodoro timer and time tracker',
+    url='https://github.com/connortoliver/pompom',
+    packages=setuptools.find_packages(), ,
     install_requires=[
         'Click',
     ],
@@ -11,4 +13,7 @@ setup(
         [console_scripts]
         pompom=pompom.__main__:main
     ''',
+    classifiers=[
+        'Programming Language :: Python :: 3',
+    ],
 )

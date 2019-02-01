@@ -8,8 +8,8 @@ import click
 @click.option('--ontime', default=25,           help='Amount of time in minutes spent doing something per timer session.')
 @click.option('--breaktime', default=5,         help='Amount of break time in minutes per timer session.')
 @click.option('--activity', default='Default',  help='Activity you\'re doing (e.g. studying, reading, programming)')
-@click.option('--sound', default=True,          help='Alarm sound [on] or [off]')
-@click.option('--auto', default=True,           help='If [on], timer will automatically loop through each timer session. If [off], timer will ask for permission to continue.')
+@click.option('--sound', default='on',          help='Alarm sound [on] or [off]')
+@click.option('--auto', default='on',           help='If [on], timer will automatically loop through each timer session. If [off], timer will ask for permission to continue.')
 def timer(ontime, breaktime, activity, sound, auto):
     """
     pompom-cli
@@ -24,17 +24,17 @@ def timer(ontime, breaktime, activity, sound, auto):
 
     if auto == 'on':
         while True:
-            print('Timer started! You have {} minutes.'.format(ontime))
+            click.echo('Timer started! You have {} minutes.'.format(ontime))
             time.sleep(ontime_secs)
 
-            print('Break time! You have {} minutes.'.format(breaktime))
+            click.echo('Break time! You have {} minutes.'.format(breaktime))
             time.sleep(breaktime_secs)
     elif auto == 'off':
         while True:
-            print('Timer started! You have {} minutes.'.format(ontime))
+            click.echo('Timer started! You have {} minutes.'.format(ontime))
             time.sleep(ontime_secs)
 
-            print('Break time! You have {} minutes.'.format(breaktime))
+            click.echo('Break time! You have {} minutes.'.format(breaktime))
             time.sleep(breaktime_secs)
 
             restart = input('Restart? (Y/N): ')
@@ -43,9 +43,9 @@ def timer(ontime, breaktime, activity, sound, auto):
             elif restart == 'N' or restart == 'n':
                 break
             else:
-                print('Please enter \'Y\' or \'N\'.')
+                click.echo('Please enter \'Y\' or \'N\'.')
     else:
-        print('Please type \'on\' or \'off\' for --auto option.')
+        click.echo('Please type \'on\' or \'off\' for --auto option.')
 
 
 if __name__ == '__main__':

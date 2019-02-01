@@ -12,7 +12,8 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'pompom=pompom_cli.__main__:main'
+            'pompom=pompom_cli.__main__:main',
+            'pomplot=pompom_cli.pomplot:plot_time',
         ],
     },
     classifiers=[

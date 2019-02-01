@@ -34,13 +34,16 @@ def timer(ontime, breaktime, activity, sound, auto):
             click.echo('Break time! You have {} minutes.'.format(breaktime))
             time.sleep(breaktime_secs)
 
-            restart = input('Restart? (Y/N): ')
+            click.echo('Continue? [Y/N] ', nl=False)
+            restart = click.getchar()
+
             if restart == 'Y' or restart == 'y':
                 continue
             elif restart == 'N' or restart == 'n':
                 break
             else:
                 click.echo('Please enter \'Y\' or \'N\'.')
+                break
     else:
         click.echo('Please type \'on\' or \'off\' for --auto option.')
 

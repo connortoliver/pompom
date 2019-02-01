@@ -7,7 +7,8 @@ setuptools.setup(
     url='https://github.com/connortoliver/pompom',
     packages=setuptools.find_packages(),
     install_requires=[
-        'click>=7.0',
+        'Click>=7.0',
+        'colorama',
     ],
     entry_points='''
         [console_scripts]

@@ -12,7 +12,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'pompom=pompom-cli.__main__:main'
+            'pompom=pompom_cli.__main__:main'
         ],
     },
     classifiers=[

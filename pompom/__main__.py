@@ -1,4 +1,3 @@
-#! python3.7
 import time
 import sys
 import click
@@ -15,8 +14,6 @@ def timer(ontime, breaktime, activity, sound, auto):
     pompom
 
     A simple program with customizable parameters to fight procrastination and track time.
-
-    Usage: python main.py [--ontime int] [--breaktime int] [--activity str] [--sound bool] [--auto bool]
     """
     # Variables created because time.sleep() function requires argument to be in seconds.
     ontime_secs = ontime * 60

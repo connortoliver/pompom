@@ -8,7 +8,6 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         'Click>=7.0',
-        'colorama',
     ],
     entry_points='''
         [console_scripts]

@@ -6,8 +6,6 @@ setup(
     py_modules=['pompom'],
     install_requires=[
         'Click',
-        'time',
-        'sys'
     ],
     entry_points='''
         [console_scripts]

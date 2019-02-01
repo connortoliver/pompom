@@ -2,10 +2,9 @@
 
 Pompom is a command line interface (CLI) application that utilizes the pomodoro technique to fight procrastination and help track time.
 
-Usage:
+#### Usage:
 
-1. Run `setup.py`.
-1. `python main.py [--ontime int] [--breaktime int] [--activity str] [--sound bool] [--auto bool]`
+<!--Update with proper usage-->
 
 ## Pomodoro technique
 

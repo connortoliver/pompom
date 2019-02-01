@@ -28,6 +28,7 @@ python setup.py install
 - `activity` is the activity you are working on (studying, reading, programming...). Default is 'Default'.
 
 `pompom 45 15` will create a timer with 45 minutes on, 15 minutes off for activity 'Default'.
+
 `pompom 25 5 Programming` will create a timer with 25 minutes on, 5 minutes off for activity 'Programming'.
 
 ## pomplot

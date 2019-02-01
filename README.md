@@ -13,10 +13,11 @@ The standard pomodoro timer is to work for 25 minutes and take a 5 minute break.
 
 OR-->
 
-`git clone https://github.com/connortoliver/pompom`
-`cd pompom_cli`
-`pip install -r requirements.txt`
-`python setup.py install`
+```git clone https://github.com/connortoliver/pompom
+cd pompom_cli
+pip install -r requirements.txt
+python setup.py install
+```
 
 ## pompom Usage
 

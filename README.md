@@ -34,11 +34,11 @@ python setup.py install
 
 ## pomplot
 
-<!--Update with pomplot information-->
+*Coming soon!*
 
 ## pomplot Usage
 
-<!--Update with pomplot usage-->
+*Coming soon!*
 
 ## How pompom was made
 

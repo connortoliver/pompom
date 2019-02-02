@@ -32,6 +32,11 @@ python setup.py install
 
 `pompom 25 5 Programming` will create a timer with 25 minutes on, 5 minutes off for activity 'Programming'.
 
+### Options
+
+- `--alarm [on/off]` turns the alarm sound on or off. Default is on.
+- `--auto [on/off]` sets where the timer cycles automatically or not. Default is on.
+
 ## pomplot
 
 *Coming soon!*

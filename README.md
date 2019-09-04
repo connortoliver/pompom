@@ -35,15 +35,7 @@ python setup.py install
 ### Options
 
 - `--alarm [on/off]` turns the alarm sound on or off. Default is on.
-- `--auto [on/off]` sets where the timer cycles automatically or not. Default is on.
-
-## pomplot
-
-*Coming soon!*
-
-## pomplot Usage
-
-*Coming soon!*
+- `--auto [on/off]` sets whether the timer cycles automatically or not. Default is on.
 
 ## How pompom was made
 

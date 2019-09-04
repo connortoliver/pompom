@@ -2,10 +2,10 @@ import time
 import sys
 from datetime import datetime as dt
 from datetime import timedelta
+import math
 import click
 from playsound import playsound
 import pandas as pd
-import math
 
 
 @click.command()
@@ -57,33 +57,9 @@ def timer(activity, ontime, breaktime, alarm):
     if alarm == 'on':
         sound_alarm()
 
-    # Use timedeltas to get time_saved and total_time
-    # time_saved is the amount of time spent working in minutes
-    # total_time is the total timer cycle in minutes
-    time_saved = round((ontime_end - time_start).total_seconds() / 60)
-    total_time = round((breaktime_end - time_start).total_seconds() / 60)
-    tracked_time = {
-        'activity': activity.title(),
-        'date': date,
-        'time_saved': time_saved,
-        'total_time': total_time,
-    }
-    track_time(tracked_time)
 
-
-# TODO: Add option to change alarm sound
 def sound_alarm():
     playsound('./alarm.wav')
-
-
-# Read activity and time data from tracked_time dictionary and ouptut to times.csv
-# times.csv can be read by pomplot.py for data visualization
-def track_time(tracked_time):
-    times = pd.DataFrame(
-        columns=['activity', 'date', 'time_saved', 'total_time'])
-    times = times.append(tracked_time, ignore_index=True)
-    times.to_csv(path_or_buf='./times.csv', mode='a',
-                 header=False, index=False)
 
 
 if __name__ == '__main__':

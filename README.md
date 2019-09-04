@@ -15,10 +15,12 @@ or-->
 
 ```git
 git clone https://github.com/connortoliver/pompom
-cd pompom_cli
+cd pompom-cli
 pip install -r requirements.txt
 python setup.py install
 ```
+
+You may have to use `python3.7` or other version number if you have multiple versions of Python installed.
 
 ## pompom Usage
 
@@ -39,4 +41,4 @@ python setup.py install
 
 ## How pompom was made
 
-pompom was built using [Click](https://pypi.org/project/click/ "Click on PyPI"), a Python package for creating command line interfaces quickly and easily.
+pompom was built using [Click](https://pypi.org/project/click/ "Click on PyPI"), a Python package for creating command line interfaces quickly and easily.pip
